@@ -1,0 +1,9 @@
+.idea/
+_ig/
+.vscode
+*.exe
+*.log
+.idea
+id_rsa
+.DS_Store
+GOLANG-CODE-CHALLENGE.md

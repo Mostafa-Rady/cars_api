@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "4fae8b82-f56f-49bb-b8d7-664894cb9cb9",
+		"name": "cars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add car",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Tipo\",\n  \"type\": \"Sedan\",\n  \"color\": \"Red\",\n  \"speedRangeKm\": 160,\n  \"features\": [\n    \"Surround-system\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cars"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add car",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Tipo\",\n  \"type\": \"Sedan\",\n  \"color\": \"Red\",\n  \"speedRangeKm\": 160,\n  \"features\": [\n    \"Surround-system\"\n  ]\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cars"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 14:06:38 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"carId\": 3\n    },\n    \"msg\": \"Created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Tipo\",\n  \"type\": \"Sedan\",\n  \"color\": \"Red\",\n  \"speedRangeKm\": 160,\n  \"features\": [\n    \"Surround-system\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/cars/search",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add car",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Tipo\",\n  \"type\": \"Sedan\",\n  \"color\": \"Red\",\n  \"speedRangeKm\": 160,\n  \"features\": [\n    \"Surround-system\"\n  ]\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cars"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 14:06:38 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"carId\": 3\n    },\n    \"msg\": \"Created\"\n}"
+				},
+				{
+					"name": "Search",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Tipo\",\n  \"type\": \"Sedan\",\n  \"color\": \"Red\",\n  \"speedRangeKm\": 160,\n  \"features\": [\n    \"Surround-system\"\n  ]\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/cars/search",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 18:10:23 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "220"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"cars\": [\n            {\n                \"id\": 3,\n                \"createdAt\": \"2022-01-17T14:06:38.41781Z\",\n                \"updatedAt\": \"2022-01-17T14:06:38.41781Z\",\n                \"deletedAt\": null,\n                \"name\": \"Tipo\",\n                \"type\": \"Sedan\",\n                \"color\": \"Red\",\n                \"speedRangeKm\": 160,\n                \"features\": [\n                    \"Surround-system\"\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get car by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/cars/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add car",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Tipo\",\n  \"type\": \"Sedan\",\n  \"color\": \"Red\",\n  \"speedRangeKm\": 160,\n  \"features\": [\n    \"Surround-system\"\n  ]\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cars"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 14:06:38 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"carId\": 3\n    },\n    \"msg\": \"Created\"\n}"
+				},
+				{
+					"name": "Get car by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/v1/cars/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 17 Jan 2022 14:38:00 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "227"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"car\": {\n            \"id\": 3,\n            \"createdAt\": \"2022-01-17T16:06:38.41781+02:00\",\n            \"updatedAt\": \"2022-01-17T16:06:38.41781+02:00\",\n            \"deletedAt\": null,\n            \"name\": \"Tipo\",\n            \"type\": \"Sedan\",\n            \"color\": \"Red\",\n            \"speedRangeKm\": 160,\n            \"features\": [\n                \"Surround-system\"\n            ]\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
